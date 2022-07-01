@@ -1,9 +1,10 @@
 package task01.chuklee.com;
 
+import java.io.IOException;
+
 public class Main {
-    
-    public static void main(String[] args) {
-       
+
+    public static void main(String[] args) throws IOException {
 
         if (args.length > 0) {
             int i = 0;
@@ -13,12 +14,15 @@ public class Main {
                 }
                     
                 else 
-                    System.out.println("Please enter files to merge.");
-                    
-                
-               
-            }
-        }
-        System.out.println(s);
-    }
+                    System.out.println("Please enter files to merge.");}
+
+                  
+       
+        Replace f = new Replace();
+        f.replace("__address__", "@@@@");
+        f.replace("__first_name__", "@@@@");
+        f.replace("__years__", "@@@@");
+        
+    }}
+    
 }

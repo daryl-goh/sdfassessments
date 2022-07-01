@@ -1,5 +1,0 @@
-create a program that takes in a CSV file and prints its data into a template text file
-create a READER class to read CSV file
-create a REPLACE class to accept template text file and replace the keywords (__xxxxx___)
-create a MAIN file to set settings for taking in of ARGUMENTS
-print message on CMD
