@@ -1,7 +1,5 @@
 package task01.chuklee.com;
 
-import task01.chuklee.com.Variables.*;
-
 public class Main {
     
     public static void main(String[] args) {
@@ -11,7 +9,7 @@ public class Main {
             int i = 0;
             while (i < args.length) {
                 if (args[0].endsWith(".csv") && args[1].endsWith(".txt")) {
-                    System.out.println("Mergine files " + args[0] + args[1]);
+                    System.out.println("Merging files " + args[0] + args[1]);
                 }
                     
                 else 
@@ -21,6 +19,6 @@ public class Main {
                
             }
         }
-
+        System.out.println(s);
     }
 }
