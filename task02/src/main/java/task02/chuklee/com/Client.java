@@ -31,20 +31,26 @@ public class Client
             String[] response2 = response.split(" ");
             String response3 = response2[1];
 
-           
-            }
+            oos.writeUTF(response2[0]);
+            oos.writeUTF("Daryl Goh Da Hui");
+            oos.writeUTF("goh.daryl@gmail.com");
+               
+            while (true) {
+                if (true) {
+                    boolean newresponse = ois.readBoolean();
+                    System.out.println("SUCCESS");
+                    break;
+                }
+                ois.readUTF();
+                sock.close();
+                System.out.println();
+           }
 
-            
-    
-            
-    
-        
-            is.close();
-            os.close();
-    
-        
-            sock.close();
+           is.close();
+           os.close();
+               }
+
         }
         
-    }}
+    }
 
