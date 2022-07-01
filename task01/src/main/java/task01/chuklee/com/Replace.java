@@ -6,10 +6,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-
+    // Create Replace
     public class Replace {
 
-        void replace(String stringToReplace, String replaceWith) throws IOException {
+        void replace(String replaceThis, String toReplace) throws IOException {
 
             String line = "";
 
@@ -19,8 +19,8 @@ import java.io.IOException;
         
             while ((line = br.readLine()) != null) {
                 
-                if (line.contains(stringToReplace))
-                    line = line.replace(stringToReplace, replaceWith);
+                if (line.contains(replaceThis))
+                    line = line.replace(replaceThis, toReplace);
                         bw.write(line);
                         bw.newLine();
                     }
